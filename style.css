@@ -451,7 +451,7 @@ ul {
   display: flex;
 }
 
-.clients-box:not(:last-child) {
+.clients-box {
   margin-right: 30px;
   border-color: var(--clients-box);
   box-sizing: border-box;
@@ -460,6 +460,10 @@ ul {
   color: var(--clients-box);
   max-width: 170px;
   max-height: 92px;
+}
+
+.clients-box:last-child {
+  margin-right: 0;
 }
 
 .clients-icon {
