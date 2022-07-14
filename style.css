@@ -261,7 +261,7 @@ ul {
   padding: 200px 0;
 
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/index-page/order_bg.jpg);
+    url(./images/index-page/order_bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
