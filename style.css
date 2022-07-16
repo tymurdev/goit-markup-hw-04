@@ -167,10 +167,13 @@ ul {
 }
 
 /* ===FOOTER=== */
+.footer-full {
+  display: flex;
+}
+
 .footer {
   background-color: var(--bgc-second);
   padding: 60px 0;
-  display: flex;
 }
 
 .footer-address {
@@ -178,6 +181,7 @@ ul {
 }
 
 .footer-link {
+  margin-bottom: 9px;
 }
 
 .footer-item {
@@ -186,10 +190,10 @@ ul {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-.footer-item:not(:last-child) {
+/* .footer-item:not(:last-child) {
   display: block;
-  margin-bottom: 9px;
-}
+  margin-bottom: 90px;
+} */
 .footer-item:focus,
 .footer-item:hover {
   color: var(--color-add);
@@ -200,9 +204,7 @@ ul {
 .footer-contacts {
   color: var(--color-footer);
 }
-.footer-full {
-  display: flex;
-}
+
 .footer-left {
   margin-right: 70px;
 }
@@ -213,6 +215,7 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  margin-bottom: 20px;
 }
 
 .footer-soc-list {
@@ -245,8 +248,6 @@ ul {
 
 .footer-soc-icon {
   fill: var(--color-third);
-  /* width: 20px;
-  height: 20px; */
 }
 
 .footer-soc-link:focus,
@@ -318,7 +319,9 @@ ul {
   height: 120px;
   background-color: var(--bgc-third);
   margin-bottom: 30px;
-  padding: 25px 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .methods-icon {
@@ -504,6 +507,7 @@ ul {
   padding: 6px 22px;
   display: block;
   max-width: max-content;
+  border: 0;
 }
 .filter-btn:hover,
 .filter-btn:focus {
