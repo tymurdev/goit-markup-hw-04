@@ -217,7 +217,7 @@ ul {
 
 .footer-soc-list {
   display: flex;
-  max-width: 206px;
+  justify-content: center;
 }
 
 .footer-soc-item {
@@ -226,7 +226,6 @@ ul {
   border-radius: 50%;
   margin-left: 10px;
   display: block;
-  background-color: var(--color-footer-soc);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -235,23 +234,23 @@ ul {
 }
 
 .footer-soc-link {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--color-third);
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--color-footer-soc);
 }
 
 .footer-soc-icon {
-  fill: currentColor;
-  width: 20px;
-  height: 20px;
+  fill: var(--color-third);
+  /* width: 20px;
+  height: 20px; */
 }
 
-.footer-soc-item:focus,
-.footer-soc-item:hover {
+.footer-soc-link:focus,
+.footer-soc-link:hover {
   background-color: var(--color-add);
 }
 
@@ -453,27 +452,39 @@ ul {
 
 .clients-box {
   margin-right: 30px;
-  border-color: var(--clients-box);
   box-sizing: border-box;
   border: 1px solid;
   border-radius: 4px;
-  color: var(--clients-box);
-  max-width: 170px;
-  max-height: 92px;
+  border-color: var(--clients-box);
+  width: 170px;
+  height: 92px;
+  display: block;
 }
 
 .clients-box:last-child {
   margin-right: 0;
 }
 
-.clients-icon {
-  fill: currentColor;
-  margin: 16px 32px;
+.clients-link {
+  color: currentColor;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--clients-box);
 }
 
+.clients-icon {
+  fill: currentColor;
+}
+
+.clients-link:focus,
+.clients-link:hover,
 .clients-box:focus,
 .clients-box:hover {
   color: var(--color-add);
+  border-color: var(--color-add);
 }
 
 /* ===PORTFOLIO=== */
